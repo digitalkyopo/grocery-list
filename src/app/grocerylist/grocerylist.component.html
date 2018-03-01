@@ -1,0 +1,17 @@
+<h2>{{ grocery.name | uppercase }} Details</h2>
+<div>
+    <label>new grocery:
+      <input [(ngModel)]="grocery.name" placeholder="name">
+    </label>
+</div>
+
+<!--
+<ul>
+    <li *ngFor="let item of grocery; let i = index;">{{i+1}}. {{grocery}}</li>
+</ul>
+-->
+<ul class ="heroes">
+    <li *ngFor ="let grocery of groceries">
+        <span class ="badge">{{groceries.id}}</span>{{groceries.name}}
+    </li>
+</ul>
