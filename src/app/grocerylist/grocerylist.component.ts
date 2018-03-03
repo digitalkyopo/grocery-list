@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Grocery} from '../grocery'
+import {GROCERIES} from '../groceries'
 
 @Component({
   selector: 'app-grocerylist',
@@ -7,6 +8,7 @@ import {Grocery} from '../grocery'
   styleUrls: ['./grocerylist.component.css']
 })
 export class GrocerylistComponent implements OnInit {
+  groceries = GROCERIES;
   grocery = Grocery = {
     id: 1;
     name: 'Cabbage';
